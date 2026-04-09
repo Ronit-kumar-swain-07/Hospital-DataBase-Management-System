@@ -19,7 +19,7 @@ public class HMSLoginUI extends JFrame {
         setLocationRelativeTo(null);
         setLayout(new GridLayout(1, 2));
 
-        // LEFT PANEL
+        
         JPanel leftPanel = new JPanel();
         leftPanel.setBackground(new Color(30, 58, 138));
         leftPanel.setLayout(new BoxLayout(leftPanel, BoxLayout.Y_AXIS));
@@ -39,7 +39,7 @@ public class HMSLoginUI extends JFrame {
         leftPanel.add(subtitle);
         leftPanel.add(Box.createVerticalGlue());
 
-        // RIGHT PANEL
+       
         JPanel rightPanel = new JPanel();
         rightPanel.setLayout(null);
 
@@ -47,7 +47,7 @@ public class HMSLoginUI extends JFrame {
         loginLabel.setFont(new Font("Arial", Font.BOLD, 24));
         loginLabel.setBounds(150, 20, 200, 30);
 
-        // 🔥 ROLE SELECTION
+        
         JLabel roleLabel = new JLabel("Select Role:");
         roleLabel.setBounds(50, 60, 100, 20);
 
@@ -68,32 +68,32 @@ public class HMSLoginUI extends JFrame {
             rolePanel.add(btn);
         }
 
-        // Email
+        
         JLabel emailLabel = new JLabel("Email:");
         emailLabel.setBounds(50, 130, 100, 20);
 
         emailField = new JTextField();
         emailField.setBounds(50, 150, 250, 30);
 
-        // Password
+        
         JLabel passLabel = new JLabel("Password:");
         passLabel.setBounds(50, 190, 100, 20);
 
         passwordField = new JPasswordField();
         passwordField.setBounds(50, 210, 250, 30);
 
-        // Error Label
+        
         errorLabel = new JLabel("");
         errorLabel.setForeground(Color.RED);
         errorLabel.setBounds(50, 250, 300, 20);
 
-        // Login Button
+        
         JButton loginBtn = new JButton("Sign In");
         loginBtn.setBounds(50, 290, 250, 40);
 
         loginBtn.addActionListener(e -> handleLogin());
 
-        // ADD COMPONENTS
+        
         rightPanel.add(loginLabel);
         rightPanel.add(roleLabel);
         rightPanel.add(rolePanel);
